@@ -8,7 +8,7 @@ COMMAND_ERR = "Cannot run this command while disconnected. Please run start() fi
 class CrowIPAlarmPanel():
     """This class represents Crow IP Module alarm panel."""
         
-    def __init__(self, host, port=5002, code='0000',
+    def __init__(self, host, port=9000, code='0000',
                  keepAliveInterval=30, eventLoop=None,
                  connectionTimeout=10):
         self._host = host
@@ -17,7 +17,7 @@ class CrowIPAlarmPanel():
         self._code = code
         self._keepAliveInterval = keepAliveInterval
         self._maxZones = 16
-        self._maxOutputs = 8
+        self._maxOutputs = 32
         self._maxAreas = 2
         self._client = None
         self._eventLoop = eventLoop
