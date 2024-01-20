@@ -29,20 +29,20 @@ RESPONSE_FORMATS = {
     'ZTR(?P<data>\d+)': {'name': 'Zone Tamper Restore', 'handler': 'zone_state_change','attr': 'tamper', 'status': False},
 
 # AREA MESSAGES
-    'AA': {'name': 'Area A Armed', 'handler': 'area_state_change', 'attr': 'armed', 'area': '1', 'status': True},
-    'AB': {'name': 'Area B Armed', 'handler': 'area_state_change','attr': 'armed', 'area': '2', 'status': True},
-    'SA': {'name': 'Area A Stay Armed', 'handler': 'area_state_change', 'attr': 'stay_armed', 'area': '1', 'status': True},
-    'SB': {'name': 'Area B Stay Armed', 'handler': 'area_state_change','attr': 'stay_armed', 'area': '2', 'status': True},
-    'DA': {'name': 'Area A Disarmed', 'handler': 'area_state_change', 'attr': 'disarmed', 'area': '1', 'status': True},
-    'DB': {'name': 'Area B Disarmed', 'handler': 'area_state_change','attr': 'disarmed', 'area': '2', 'status': True},
-    'EAA': {'name': 'Area A Exit Delay', 'handler': 'area_state_change', 'attr': 'exit_delay', 'area': '1', 'status': True},
-    'EAB': {'name': 'Area B Exit Delay', 'handler': 'area_state_change','attr': 'exit_delay', 'area': '2', 'status': True},
-    'ESA': {'name': 'Area A Stay Exit Delay', 'handler': 'area_state_change', 'attr': 'stay_exit_delay', 'area': '1', 'status': True},
-    'ESB': {'name': 'Area B Stay Exit Delay', 'handler': 'area_state_change','attr': 'stay_exit_delay', 'area': '2', 'status': True},
+    'A1': {'name': 'Area A Armed', 'handler': 'area_state_change', 'attr': 'armed', 'area': '1', 'status': True},
+    'A2': {'name': 'Area B Armed', 'handler': 'area_state_change','attr': 'armed', 'area': '2', 'status': True},
+    'S1': {'name': 'Area A Stay Armed', 'handler': 'area_state_change', 'attr': 'stay_armed', 'area': '1', 'status': True},
+    'S2': {'name': 'Area B Stay Armed', 'handler': 'area_state_change','attr': 'stay_armed', 'area': '2', 'status': True},
+    'D1': {'name': 'Area A Disarmed', 'handler': 'area_state_change', 'attr': 'disarmed', 'area': '1', 'status': True},
+    'D2': {'name': 'Area B Disarmed', 'handler': 'area_state_change','attr': 'disarmed', 'area': '2', 'status': True},
+    'EA1': {'name': 'Area A Exit Delay', 'handler': 'area_state_change', 'attr': 'exit_delay', 'area': '1', 'status': True},
+    'EA2': {'name': 'Area B Exit Delay', 'handler': 'area_state_change','attr': 'exit_delay', 'area': '2', 'status': True},
+    'ES1': {'name': 'Area A Stay Exit Delay', 'handler': 'area_state_change', 'attr': 'stay_exit_delay', 'area': '1', 'status': True},
+    'ES2': {'name': 'Area B Stay Exit Delay', 'handler': 'area_state_change','attr': 'stay_exit_delay', 'area': '2', 'status': True},
 
 # OUTPUT MESSAGES
     'OO(?P<data>\d+)': {'name': 'Output On', 'handler': 'output_state_change', 'attr': 'open', 'status': True},
-    'OC(?P<data>\d+)': {'name': 'Output Off', 'handler': 'output_state_change', 'attr': 'open', 'status': False},
+    'OR(?P<data>\d+)': {'name': 'Output Off', 'handler': 'output_state_change', 'attr': 'open', 'status': False},
 
 # SYSTEM MESSAGES
     'MF': {'name': 'Mains Fail', 'handler': 'system_state_change', 'attr': 'mains', 'status': False},
