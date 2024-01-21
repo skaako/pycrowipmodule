@@ -35,6 +35,7 @@ class CrowIPAlarmPanel():
         self._connectedCallback = self._defaultCallback
 
         self._loginTimeoutCallback = self._defaultCallback
+        _LOGGER.info("Starting CrowIPAlarmPanel_1.1...")
 
         loggingconfig = {'level': 'DEBUG',
                      'format': '%(asctime)s %(levelname)s <%(name)s %(module)s %(funcName)s> %(message)s',
