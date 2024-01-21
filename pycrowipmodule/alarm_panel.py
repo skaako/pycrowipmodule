@@ -195,6 +195,20 @@ class CrowIPAlarmPanel():
         else:
             _LOGGER.error(COMMAND_ERR)
 
+    def command_on_output(self, outputNumber):
+        """Public method to activate an output"""
+        if self._client:
+            self._client.on_output(outputNumber)
+        else:
+            _LOGGER.error(COMMAND_ERR)
+
+    def command_off_output(self, outputNumber):
+        """Public method to activate an output"""
+        if self._client:
+            self._client.off_output(outputNumber)
+        else:
+            _LOGGER.error(COMMAND_ERR)
+
     def relay_on(self, relayNo):
         """Public method to activate relay 1."""
         if self._client:
