@@ -5,7 +5,7 @@ setup(
     name='pycrowipmodule',
     version='0.31b0',
     description='Library for Crow/AAP Alarm Ip Module',
-    url='https://github.com/febalci/pycrowipmodule',
+    url='https://github.com/skaako/pycrowipmodule',
     author='febalci',
     author_email='febalci@yahoo.com',
     license='MIT',
