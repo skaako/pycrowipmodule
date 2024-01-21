@@ -219,7 +219,15 @@ class CrowIPModuleClient(asyncio.Protocol):
 
     def toggle_output(self, outputNumber):
         """Used to toggle the selected command output"""
-        self.send_command('toogle_output_x', str(outputNumber))	
+        self.send_command('toogle_output_x', str(outputNumber))
+    
+    def on_output(self, outputNumber):
+        """Used to turn on the selected command output"""
+        self.send_command('on_output_x', str(outputNumber))	
+
+    def off_output(self, outputNumber):
+        """Used to turn off the selected command output"""
+        self.send_command('off_output_x', str(outputNumber))
 
     def handle_connect_failure(self):
         """Handler for if we fail to connect to the Module."""
