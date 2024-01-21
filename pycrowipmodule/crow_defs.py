@@ -13,6 +13,8 @@ COMMANDS = {
     'relay_1_on': 'RL1',
     'relay_2_on': 'RL2',
     'toogle_output_x': 'OO',
+    'on_output_x': 'OUTPUTON',
+    'off_output_x': 'OUTPUTOFF',
     'keys': 'KEYS',
     'status': 'STATUS',
 }
